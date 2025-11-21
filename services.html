@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GKT Services - Proprietary Trading Intelligence" />
+  <title>Services - GKT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #c0392b;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #c0392b;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .services-section {
+      min-height: calc(100vh - 200px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+    .services-container {
+      max-width: 800px;
+      text-align: center;
+    }
+    .services-title {
+      font-size: 3rem;
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+    .coming-soon {
+      background: white;
+      padding: 4rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .coming-soon-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .coming-soon h2 {
+      font-size: 2rem;
+      color: #c0392b;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .coming-soon p {
+      font-size: 1.25rem;
+      color: #666;
+      line-height: 1.8;
+    }
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .services-title {
+        font-size: 2rem;
+      }
+      .coming-soon {
+        padding: 3rem 2rem;
+      }
+      .coming-soon h2 {
+        font-size: 1.5rem;
+      }
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">GKT</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="services-section">
+    <div class="services-container">
+      <h1 class="services-title">Our <span style="color: #c0392b;">Services</span></h1>
+      <div class="coming-soon">
+        <div class="coming-soon-icon">🚀</div>
+        <h2>Product Offerings Coming Soon...!</h2>
+        <p>We're working on exciting proprietary trading solutions. Stay tuned for updates on our innovative systems and intelligence platforms designed for the Indian markets.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 GKT Pvt Ltd. All rights reserved.
+  </footer>
+</body>
+</html>
